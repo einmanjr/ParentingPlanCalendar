@@ -13,6 +13,7 @@
 		252959762640BAF60035E5C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252959742640BAF60035E5C4 /* Main.storyboard */; };
 		252959782640BAF70035E5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252959772640BAF70035E5C4 /* Assets.xcassets */; };
 		2529597B2640BAF70035E5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252959792640BAF70035E5C4 /* LaunchScreen.storyboard */; };
+		D7381613DE65D2DED675F306 /* Pods_ParentingPlanCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F8D3C5181793DE8A4035E4 /* Pods_ParentingPlanCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		252959772640BAF70035E5C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2529597A2640BAF70035E5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2529597C2640BAF70035E5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D72BFAF492B3F214406C9EC /* Pods-ParentingPlanCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentingPlanCalendar.debug.xcconfig"; path = "Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		5B8576285C3C158788434D70 /* Pods-ParentingPlanCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentingPlanCalendar.release.xcconfig"; path = "Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		F4F8D3C5181793DE8A4035E4 /* Pods_ParentingPlanCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentingPlanCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7381613DE65D2DED675F306 /* Pods_ParentingPlanCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2529596D2640BAF60035E5C4 /* ParentingPlanCalendar */,
 				2529596C2640BAF60035E5C4 /* Products */,
+				BC4C39A18A03590F9139F639 /* Pods */,
+				718072654CF849AB0D0C53B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +65,55 @@
 			children = (
 				2529596E2640BAF60035E5C4 /* AppDelegate.swift */,
 				252959702640BAF60035E5C4 /* SceneDelegate.swift */,
-				252959722640BAF60035E5C4 /* ViewController.swift */,
-				252959742640BAF60035E5C4 /* Main.storyboard */,
+				252959862640BD5B0035E5C4 /* Model */,
+				252959842640BD4D0035E5C4 /* Controller */,
+				252959832640BD400035E5C4 /* View */,
 				252959772640BAF70035E5C4 /* Assets.xcassets */,
 				252959792640BAF70035E5C4 /* LaunchScreen.storyboard */,
 				2529597C2640BAF70035E5C4 /* Info.plist */,
 			);
 			path = ParentingPlanCalendar;
+			sourceTree = "<group>";
+		};
+		252959832640BD400035E5C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				252959742640BAF60035E5C4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		252959842640BD4D0035E5C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				252959722640BAF60035E5C4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		252959862640BD5B0035E5C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		718072654CF849AB0D0C53B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F8D3C5181793DE8A4035E4 /* Pods_ParentingPlanCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC4C39A18A03590F9139F639 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D72BFAF492B3F214406C9EC /* Pods-ParentingPlanCalendar.debug.xcconfig */,
+				5B8576285C3C158788434D70 /* Pods-ParentingPlanCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2529597F2640BAF70035E5C4 /* Build configuration list for PBXNativeTarget "ParentingPlanCalendar" */;
 			buildPhases = (
+				59522CBC0F1614683F65ECB1 /* [CP] Check Pods Manifest.lock */,
 				252959672640BAF60035E5C4 /* Sources */,
 				252959682640BAF60035E5C4 /* Frameworks */,
 				252959692640BAF60035E5C4 /* Resources */,
+				0E2B715ABF8049227FF20BD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +182,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2B715ABF8049227FF20BD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59522CBC0F1614683F65ECB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParentingPlanCalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		252959672640BAF60035E5C4 /* Sources */ = {
@@ -283,6 +376,7 @@
 		};
 		252959802640BAF70035E5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D72BFAF492B3F214406C9EC /* Pods-ParentingPlanCalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +396,7 @@
 		};
 		252959812640BAF70035E5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8576285C3C158788434D70 /* Pods-ParentingPlanCalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
