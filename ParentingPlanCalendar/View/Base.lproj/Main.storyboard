@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kLe-NQ-5tK">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,35 +12,66 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParentingPlanCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEy-El-rUG" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="518"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="804"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KEy-El-rUG" secondAttribute="trailing" id="5wf-hi-ONX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KEy-El-rUG" secondAttribute="bottom" constant="300" id="FEA-Ke-Nvm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KEy-El-rUG" secondAttribute="bottom" id="FEA-Ke-Nvm"/>
                             <constraint firstItem="KEy-El-rUG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g9E-iu-zbh"/>
                             <constraint firstItem="KEy-El-rUG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uOT-xL-yTX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DcI-FJ-AHn">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="8Mq-Yd-QVa" userLabel="Item">
+                            <color key="tintColor" red="0.64313725489999995" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapMenu" destination="BYZ-38-t0r" id="dYm-AI-fAT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="calendar" destination="KEy-El-rUG" id="V1B-cW-Lqb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152" y="24"/>
+            <point key="canvasLocation" x="4373.8317757009345" y="23.974082073434126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zch-OA-nv0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kLe-NQ-5tK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sj6-RM-BC9">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.64313725489999995" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.64313725489999995" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.64313725489999995" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.64313725489999995" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tfx-51-Npc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pps-4T-in8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3473.8317757009345" y="23.974082073434126"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

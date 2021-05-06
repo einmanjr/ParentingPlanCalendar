@@ -6,15 +6,27 @@
 //
 import FSCalendar
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
-
+ 
     @IBOutlet var calendar: FSCalendar!
+    
+    var sideMenu: SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         calendar.delegate = self
         calendar.dataSource = self
+        sideMenu = SideMenuNavigationController(rootViewController: MenuListController())
+        sideMenu?.leftSide = true
+        sideMenu?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+    }
+    
+    @IBAction func didTapMenu() {
+        present(sideMenu!, animated: true)
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
@@ -43,6 +55,11 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
                
      }
 }
+
+
+
+
+
 
 extension Date {
 

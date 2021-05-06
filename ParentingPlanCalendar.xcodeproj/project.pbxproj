@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		252959762640BAF60035E5C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252959742640BAF60035E5C4 /* Main.storyboard */; };
 		252959782640BAF70035E5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252959772640BAF70035E5C4 /* Assets.xcassets */; };
 		2529597B2640BAF70035E5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252959792640BAF70035E5C4 /* LaunchScreen.storyboard */; };
+		25CFC375264369C10034DC4B /* MenuListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CFC374264369C10034DC4B /* MenuListController.swift */; };
 		D7381613DE65D2DED675F306 /* Pods_ParentingPlanCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F8D3C5181793DE8A4035E4 /* Pods_ParentingPlanCalendar.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		252959772640BAF70035E5C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2529597A2640BAF70035E5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2529597C2640BAF70035E5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25CFC374264369C10034DC4B /* MenuListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListController.swift; sourceTree = "<group>"; };
 		2D72BFAF492B3F214406C9EC /* Pods-ParentingPlanCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentingPlanCalendar.debug.xcconfig"; path = "Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8576285C3C158788434D70 /* Pods-ParentingPlanCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentingPlanCalendar.release.xcconfig"; path = "Target Support Files/Pods-ParentingPlanCalendar/Pods-ParentingPlanCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		F4F8D3C5181793DE8A4035E4 /* Pods_ParentingPlanCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentingPlanCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				252959722640BAF60035E5C4 /* ViewController.swift */,
+				25CFC374264369C10034DC4B /* MenuListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,7 +115,6 @@
 				2D72BFAF492B3F214406C9EC /* Pods-ParentingPlanCalendar.debug.xcconfig */,
 				5B8576285C3C158788434D70 /* Pods-ParentingPlanCalendar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				252959732640BAF60035E5C4 /* ViewController.swift in Sources */,
+				25CFC375264369C10034DC4B /* MenuListController.swift in Sources */,
 				2529596F2640BAF60035E5C4 /* AppDelegate.swift in Sources */,
 				252959712640BAF60035E5C4 /* SceneDelegate.swift in Sources */,
 			);
